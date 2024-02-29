@@ -1,5 +1,3 @@
-import { accentColor } from "../../config/color";
-
 function Uncompleted() {
   return (
     <svg
@@ -10,7 +8,7 @@ function Uncompleted() {
     >
       <path
         d="M10 3a7 7 0 100 14 7 7 0 000-14zm-8 7a8 8 0 1116 0 8 8 0 01-16 0z"
-        fill={accentColor}
+        fill="#15A34A"
       ></path>
     </svg>
   );
