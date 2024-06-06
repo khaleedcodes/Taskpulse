@@ -38,7 +38,7 @@ function ToDoWrapper() {
 
   // Component rendering
   return (
-    <div className="gap-6 h-full p-8 max-sm:p-2">
+    <div className="gap-6 h-full p-8 max-sm:p-2 min-h-[80vh]">
       <CurrentDate />
       {/* Render the TodoForm component and pass the 'updateToDo' function */}
       <TodoForm addToDo={addToDo} />
