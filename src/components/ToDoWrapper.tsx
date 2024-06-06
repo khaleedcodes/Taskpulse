@@ -7,8 +7,7 @@ import type { ToDo } from "../types/types";
 function ToDoWrapper() {
   // State to manage the list of to-do items
   const [toDoList, setToDoList] = useState<ToDo[]>(
-    // JSON.parse(localStorage.getItem("toDoList"))
-    []
+    JSON.parse(localStorage.getItem("toDoList") || "[]") || []
   );
 
   // Function to update the to-do list with a new item
@@ -39,7 +38,7 @@ function ToDoWrapper() {
 
   // Component rendering
   return (
-    <div className="gap-6 h-full p-8">
+    <div className="gap-6 h-full p-8 max-sm:p-2">
       <CurrentDate />
       {/* Render the TodoForm component and pass the 'updateToDo' function */}
       <TodoForm addToDo={addToDo} />
